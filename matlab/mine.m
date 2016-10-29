@@ -36,9 +36,9 @@ function [minestats, M] = mine(x, y, alpha, c, est)
 %           tic: 67.661
 
 % default to MICe, not MIC
-% if nargin<5
-%     est = 'mic_approx';
-% end
+if nargin<5
+    est = 'mic_e';
+end
 
 if nargin<4
     c = 15;
